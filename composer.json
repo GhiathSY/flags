@@ -1,34 +1,39 @@
 {
-    "name": "naseg/flags",
-    "description": "flags",
-    "authors": [
-        {
-            "name": "Ghiath Alkhatib",
-            "email": "alkhatib.syr@gmail.com"
-        }
-    ],
-    "require": {
-        "php": "^7.4|^8.0",
-        "blade-ui-kit/blade-icons": "^1.1",
-        "illuminate/support": "^8.0|^9.0"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^6.0|^7.0",
-        "phpunit/phpunit": "^9.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Naseg\\Flags\\": "src/"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Naseg\\Flags\\FlagsServiceProvider"
-            ]
-        }
-    }
+	"name": "naseg/flags",
+	"description": "flags",
+	"authors": [
+		{
+			"name": "Ghiath Alkhatib",
+			"email": "alkhatib.syr@gmail.com"
+		}
+	],
+	"config": {
+		"sort-packages": true
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require": {
+		"php": "^7.4|^8.0",
+		"blade-ui-kit/blade-icons": "^1.1",
+		"illuminate/support": "^8.0|^9.0"
+	},
+	"require-dev": {
+		"orchestra/testbench": "^6.0|^7.0",
+		"phpunit/phpunit": "^9.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Naseg\\Flags\\": "src/"
+		},
+		"files": [
+			"src/helpers.php"
+		]
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Naseg\\Flags\\FlagsServiceProvider"
+			]
+		}
+	}
 }
